@@ -1,0 +1,52 @@
+.cover-heading {
+	font-family: "Amatic Bold";
+	font-size: 7.5em;
+}
+
+#cover-logo {
+	margin-top: 25px;
+	width: 65%;
+}
+
+.lead {
+	font-family: 'Latin Modern Mono Regular';
+}
+
+#contact-modal {
+	text-shadow: none;
+}
+
+#contact-modal-label {
+	font-weight: bold;
+	color: #555555;
+}
+
+#contact-form label {
+	float: left;
+	color: #555555;
+}
+
+#contact-form button {
+	width: 50%;
+	padding: 10px;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#success-msg {
+	margin-top: 50px;
+	color: #555555;
+	text-shadow: none;
+}
+
+#success-msg .alert-link {
+	font-weight: bold;
+}
+
+#footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	font-size: 0.85em;
+	color: #A0A0A0;
+}
