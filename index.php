@@ -3,3 +3,7 @@
 <?php include 'content/cover.php'; ?>
 
 <?php include 'content/common/footer.php'; ?>
+
+<?php include 'content/contact.php'; ?>
+
+<?php include 'content/estimate.php'; ?>

@@ -1,10 +1,28 @@
+#header-bar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#get-estimate-btn {
+	float: right;
+	margin: 25px;
+	background-color: #ffffff;
+	color: #333333;
+	font-weight: bold;
+}
+
+.cover {
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
 .cover-heading {
 	font-family: "Amatic Bold";
 	font-size: 7.5em;
 }
 
 #cover-logo {
-	margin-top: 25px;
 	width: 65%;
 }
 
@@ -12,25 +30,37 @@
 	font-family: 'Latin Modern Mono Regular';
 }
 
-#contact-modal {
+#contact-modal, #estimate-modal {
 	text-shadow: none;
 }
 
-#contact-modal-label {
+#contact-modal-label, #estimate-modal-label {
 	font-weight: bold;
 	color: #555555;
 }
 
-#contact-form label {
-	float: left;
+#contact-form .form-group, #estimate-form .form-group {
+	text-align: left;
+}
+
+#contact-form label, #estimate-form label {
 	color: #555555;
 }
 
-#contact-form button {
-	width: 50%;
+#contact-form .small, #estimate-form .small {
+	margin-top: -5px;
+	color: #808080;
+}
+
+#contact-form #submit, #estimate-form #submit {
+	width: 45%;
 	padding: 10px;
 	font-size: 1.5em;
 	font-weight: bold;
+}
+
+#contact-form #antispam, #estimate-form #antispam {
+	display: none;
 }
 
 #success-msg {
@@ -39,14 +69,42 @@
 	text-shadow: none;
 }
 
+#success-msg .panel-heading {
+	font-weight: bold;
+}
+
 #success-msg .alert-link {
 	font-weight: bold;
 }
 
-#footer {
-	width: 100%;
-	position: fixed;
-	bottom: 0;
-	font-size: 0.85em;
-	color: #A0A0A0;
+#fail-msg {
+	margin-top: 50px;
+	color: #555555;
+	text-shadow: none;
+}
+
+#fail-msg #try-again {
+	font-weight: bold;
+}
+
+#fail-msg .alert-link {
+	font-weight: bold;
+}
+
+#spam-msg {
+	text-shadow: none;
+}
+
+#spam-msg .alert-link {
+	font-weight: bold;
+}
+
+.ui-datepicker {
+	text-shadow: none;
+}
+
+.ui-datepicker-header {
+	background: none;
+	background-color: #466480;
+	border: 1px solid #2c3c4c;
 }

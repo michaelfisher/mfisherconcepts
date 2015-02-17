@@ -5,18 +5,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="title" content="MFisher Concepts">
 		<link rel="shortcut icon" href="favicon.png">
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-		<!--OpenGraph Meta-->
+		<!--OpenGraph Meta
 		<link rel="canonical" href="#" />
 		<meta property="og:image" content="#" />
 		<meta property="og:url" content="#" />
 		<meta property="og:title" content="OpenGraph Title" />
 		<meta property="og:description" content="OpenGraph Description" />
-
-		
+		-->
 
 		<title>MFisher Concepts</title>
+
+		<!--jQuery UI CSS-->
+		<link href="jquery-ui/jquery-ui.min.css" rel="stylesheet">
+		<link href="jquery-ui/jquery-ui.theme.min.css" rel="stylesheet">
+		<link href="jquery-ui/jquery-ui.structure.min.css" rel="stylesheet">
 
 		<!--Bootstrap core CSS-->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -40,8 +43,6 @@
 	</head>
 
 	<body>
-
-	<?php include 'content/contact.php'; ?>
 
 		<div class="site-wrapper">
 
