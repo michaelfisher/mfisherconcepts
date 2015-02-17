@@ -38,7 +38,13 @@ if(isset($_POST['url']) && $_POST['url'] == ''){
 	if(mail($my_email, $email_subject, $email_body, $email_headers)){
 
 		//Log to file
-		$successlogfile = $_SERVER['DOCUMENT_ROOT'] . "/" . "logs" . "/" . "success" . "/" . $timestamp . "_" . $email;
+		$successdir = $_SERVER['DOCUMENT_ROOT'] . "/" . "logs" . "/" . "success";
+		$successlogfile = $successdir . "/" . $timestamp . "_" . $email;
+
+		if (!file_exists( $successdir )) {
+		    mkdir($successdir, 0777, true);
+		}
+
 		file_put_contents($successlogfile, $email_body);
 		
 		//Print success message
@@ -64,8 +70,14 @@ if(isset($_POST['url']) && $_POST['url'] == ''){
 	}
 	else {
 		//Log to file
-		$faillogfile = $_SERVER['DOCUMENT_ROOT'] . "/" . "logs" . "/" . "fail" . "/" . $timestamp . "_" . $email;
-		file_put_contents($faillogfile, $message);
+		$faildir = $_SERVER['DOCUMENT_ROOT'] . "/" . "logs" . "/" . "fail";
+		$faillogfile = $faildir . "/" . $timestamp . "_" . $email;
+
+		if (!file_exists( $faildir )) {
+		    mkdir($faildir, 0777, true);
+		}
+
+		file_put_contents($faillogfile, $email_body);
 
 		//Print fail message
 		$fail = 		   "<div id=\"fail-msg\">
@@ -80,8 +92,14 @@ if(isset($_POST['url']) && $_POST['url'] == ''){
 
 else {
 	//Log to file
-	$spamlogfile = $_SERVER['DOCUMENT_ROOT'] . "/" . "logs" . "/" . "spam" . "/" . $timestamp . "_" . $email;
-	file_put_contents($spamlogfile, $message);
+	$spamdir = $_SERVER['DOCUMENT_ROOT'] . "/" . "logs" . "/" . "spam";
+	$spamlogfile = $spamdir . "/" . $timestamp . "_" . $email;
+
+	if (!file_exists( $spamdir )) {
+	    mkdir($spamdir, 0777, true);
+	}
+
+	file_put_contents($spamlogfile, $email_body);
 
 	//Print message
 	$spam = 		   "<div id=\"spam-msg\">
