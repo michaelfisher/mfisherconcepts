@@ -18,7 +18,7 @@ $deadline = $_POST["estimate-deadline"];
 
 // Compose the email
 $my_email = "mike@mfisherconcepts.com";
-$email_subject = "New message from $name";
+$email_subject = "Estimate request from $name";
 $email_body = "Name: $name\n";
 $email_body .= "E-mail: $email\n";
 $email_body .= "Phone: $phone\n\n";
