@@ -1,2 +1,4 @@
-logs/
+logs/success/*
+logs/fail/*
+logs/spam/*
 mail.out
