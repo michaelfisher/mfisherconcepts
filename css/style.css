@@ -2,18 +2,21 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
+	background-color: rgba(256,256,256,0.5);
+	border-radius: 0 0 6px 6px;
+	box-shadow: rgba(0,0,0,0.5) 0 0 10px;
 }
 
 #get-estimate-btn {
 	float: right;
-	margin: 25px;
+	margin: 10px;
 	background-color: #ffffff;
 	color: #333333;
 	font-weight: bold;
 }
 
 .cover {
-	margin-top: 35px;
+	margin-top: 125px;
 	margin-bottom: 35px;
 }
 
